@@ -1,5 +1,3 @@
-package src;
-
 import java.io.*;
 import java.net.*;
 import java.nio.file.*;
@@ -28,7 +26,7 @@ public class Downloader implements Runnable {
                 Files.copy(in, Paths.get(fileName), StandardCopyOption.REPLACE_EXISTING);
             }
 
-            System.out.println("✅ Download concluído: " + fileName);
+            System.out.println("Download concluído: " + fileName);
 
             synchronized (downloadedFiles) {
                 downloadedFiles.add(new File(fileName));
