@@ -5,8 +5,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class UrlGenerator {
-    public static void main(String[] args) {
-        int n = 100;
+
+    public static void generate(int n) {
         String baseUrl = "https://picsum.photos/seed/%d/800/600";
         String outputFile = "src/imagesUrls.txt";
 
@@ -16,9 +16,9 @@ public class UrlGenerator {
                 writer.write(url);
                 writer.newLine();
             }
-            System.out.println("Arquivo 'urls.txt' gerado com " + n + " URLs!");
+            System.out.println("Arquivo 'imagesUrls.txt' gerado com " + n + " URLs de imagens");
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("Erro ao gerar arquivo de URLs " + e.getMessage());
         }
     }
 }
