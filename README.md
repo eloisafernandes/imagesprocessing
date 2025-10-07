@@ -24,9 +24,10 @@ O programa:
 No diretório raiz do projeto (`imagesprocessing/`), execute:
 
 ```bash
-javac src/src/*.java
+javac src/*.java
 ```
 e para executar o programa
 ```bash
-java -cp src src.Main
+java -cp src Main
 ```
+
