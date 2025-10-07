@@ -7,7 +7,7 @@ O programa realiza o download e o processamento de imagens concorrentemente, uti
 O programa:
 1. Gera automaticamente um arquivo `imagesUrls.txt` contendo várias URLs de imagens.
 2. Faz o **download** de todas as imagens a partir dessas URLs.
-3. Após o download, converte todas as imagens para **tons de cinza (grayscale)** — também de forma concorrente.
+3. Após o download, converte todas as imagens para **tons de cinza (grayscale)**, também de forma concorrente.
 4. Exibe o tempo total de processamento.
 
 ## ⚙️ Requisitos
